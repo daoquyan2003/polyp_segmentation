@@ -10,7 +10,7 @@ hydra-colorlog==1.2.0
 hydra-optuna-sweeper==1.2.0
 
 # --------- loggers --------- #
-# wandb
+wandb
 # neptune-client
 # mlflow
 # comet-ml
@@ -21,4 +21,30 @@ rootutils       # standardizing the project root setup
 pre-commit      # hooks for applying linters on commit
 rich            # beautiful text formatting in terminal
 pytest          # tests
-# sh            # for running bash commands in some tests (linux/macos only)
+sh; platform_system != 'Windows' # for running bash commands in some tests (linux/macos only)
+omegaconf
+tqdm
+tensorflow
+pynvml
+
+# --------- data --------- #
+numpy
+Pillow
+opencv-python-headless
+albumentations
+h5py
+
+# --------- models --------- #
+timm
+segmentation-models-pytorch
+monai
+segment_anything
+
+# --------- visualization --------- #
+seaborn
+scikit_learn
+matplotlib
+ipython
+grad-cam
+ttach
+kaggle
